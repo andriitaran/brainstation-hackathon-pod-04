@@ -94,11 +94,11 @@ body {
 }
 
 .main-container__placeholders--title {
-  margin-right: 518px;
+  margin-right: 708px;
 }
 
 .main-container__placeholders--category {
-  margin-right: 215px;
+  margin-right: 66px;
 }
 
 .main-container__article {
@@ -120,24 +120,26 @@ body {
   font-size: 24px;
   line-height: 33px;
   margin-left: 40px;
-  width: 500px;
-  white-space: nowrap;
+  width: 605px;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .main-container__article--category {
   font-family: Avenir Regular;
   font-size: 18px;
   line-height: 15px;
-  margin-left: 30px;
-  width: 200px;
+  margin-left: 115px;
+  width: 150px;
 }
 
 .main-container__article--date {
   font-family: Avenir Regular;
   font-size: 18px;
   line-height: 15px;
-  margin-left: 120px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

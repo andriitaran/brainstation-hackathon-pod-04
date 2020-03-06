@@ -51,9 +51,11 @@ export default class App extends Component {
                     <span className="main-container__top--header">
                       My Postings
                     </span>
-                    <button className="main-container__top--button">
-                      <span>ADD NEW</span>
-                    </button>
+                    <Link to="/input">
+                      <button className="main-container__top--button">
+                        <span>ADD NEW</span>
+                      </button>
+                    </Link>
                   </div>
                   <div className="main-container__placeholders">
                     <span className="main-container__placeholders--title">
