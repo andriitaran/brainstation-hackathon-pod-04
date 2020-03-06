@@ -1,0 +1,71 @@
+.main {
+  &-container {
+    margin: 70px 160px;
+    &__top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &--header {
+        @include header(50px, 50px);
+      }
+      &--button {
+        width: 170px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        &::hover {
+          cursor: pointer;
+        }
+      }
+      &--button span {
+        @include subheader(18px, 18px);
+      }
+    }
+    &__placeholders {
+      margin-top: 91px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      @include subheader(20px, 20px);
+      &--title {
+        margin-right: 708px;
+      }
+      &--category {
+        margin-right: 66px;
+      }
+    }
+    &__article {
+      display: flex;
+      align-items: center;
+      width: 1120px;
+      height: 120px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      &--title {
+        @include subheader(24px, 33px);
+        margin-left: 40px;
+        width: 605px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      &--category {
+        @include subheader(18px, 15px);
+        margin-left: 115px;
+        width: 150px;
+      }
+      &--date {
+        @include subheader(18px, 15px);
+        margin-left: 20px;
+      }
+    }
+  }
+}
