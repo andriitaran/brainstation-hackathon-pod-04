@@ -436,4 +436,46 @@ body {
   line-height: 15px;
   margin-left: 20px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: #b5dbc4;
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav-bar__list--link {
+  text-decoration: none;
+  color: #323232;
+  margin-right: 70px;
+}
+
+.nav-bar__logo {
+  height: 60px;
+  margin-left: 50px;
+}
+
+.login {
+  margin-left: 440px;
+}
 /*# sourceMappingURL=main.css.map */
