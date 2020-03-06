@@ -27,4 +27,57 @@ body {
   font-family: Avenir Bold;
   src: url(../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
 }
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 160px;
+}
+
+.input {
+  position: relative;
+}
+
+.input-header__title {
+  font-family: Avenir Regular;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.input-header__button-container {
+  position: relative;
+  float: right;
+  top: -70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button--white {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  padding: 11px;
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+.button--grey {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  padding: 11px;
+  margin-left: 20px;
+  background-color: #dddddd;
+}
 /*# sourceMappingURL=main.css.map */
