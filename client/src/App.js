@@ -74,7 +74,6 @@ export default class App extends Component {
             </Route>
             <Route path="/input">
               <Header />
-              <h1>HACKATHON</h1>
               <Input />
             </Route>
           </Switch>

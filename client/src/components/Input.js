@@ -8,12 +8,11 @@ function Input(props) {
       url: `http://localhost:5000/data`,
       data: {
         title: input.title,
-        date: input.date,
+        category: input.category,
         links: input.links,
         images: input.images,
-        category: input.category,
-        body: input.body,
-        keywords: input.keywords
+        videos: input.videos,
+        body: input.body
       }
     }).then(response => {
       console.log("Content was input successfully!");
@@ -25,12 +24,11 @@ function Input(props) {
     console.log(event.target.date.value);
     let input = {
       title: event.target.title.value,
-      date: event.target.date.value,
+      category: event.target.category.value,
       links: event.target.links.value,
       images: event.target.images.value,
-      category: event.target.category.value,
-      body: event.target.body.value,
-      keywords: event.target.keywords.value
+      videos: event.target.videos.value,
+      body: event.target.body.value
     };
     console.log(input);
     recordInput(input);
@@ -39,32 +37,23 @@ function Input(props) {
   };
   return (
     <div className="container">
-      <div className="input-header">
-        <h1 className="input-header__title">New Posting</h1>
-      </div>
+      <span className="input-header__title">New Posting</span>
       <form className="input" action="submit" onSubmit={handleCreate}>
-        <div className="input-header__button-container">
-          <button className="button--white">CANCEL</button>
-          <button className="button--grey">SAVE DRAFT</button>
-          <button type="submit" className="input__submit button--grey">
-            SEE RESULTS
-          </button>
-        </div>
-        <div className="input__head1">
-          <h3>Post title</h3>
+        <div className="input__title">
+          <span className="input__title--header">Post title</span>
           <input
-            className="input__title"
+            className="input__title--box"
             placeholder="Title"
             name="title"
           ></input>
         </div>
-        <div className="input__head2">
-          <h3>DAY</h3>
-          <input name="date" type="date" className="input__day"></input>
-        </div>
-        <div className="input__head5">
-          <h3>CATEGORY</h3>
-          <select className="input__category" name="category">
+        {/* <div className="input__date">
+          <span className="input__date--posting">Date of posting</span>
+          <input className="input__date--input" name="date" type="date"></input>
+        </div> */}
+        <div className="input__category">
+          <span className="input__category--header">Category</span>
+          <select className="input__category--input" name="category">
             <option value="technology">Technology</option>
             <option value="lifestyle">Lifestyle</option>
             <option value="socialmedia">Social Media</option>
@@ -73,41 +62,48 @@ function Input(props) {
             <option value="world">World</option>
           </select>
         </div>
-        <div className="input__head3">
-          <h3>NUMBER OF HYPERLINKS</h3>
+        <div className="input__links">
+          <span className="input__links--header">Number of hyperlinks</span>
           <input
-            className="input__links"
-            placeholder="Number of hyperlinks in your post"
+            className="input__links--input"
+            placeholder=""
             type="number"
             name="links"
           ></input>
         </div>
-        <div className="input__head7">
-          <h3>Tags</h3>
+        <div className="input__images">
+          <span className="input__images--header">Number of images</span>
           <input
-            className="input__keywords"
-            placeholder="(Optional) Tags or associated with your content"
-            name="keywords"
-          ></input>
-        </div>
-        <div className="input__head4">
-          <h3>NUMBER OF IMAGES</h3>
-          <input
-            className="input__images"
-            placeholder="Number of images in your post"
+            className="input__images--input"
+            placeholder=""
             type="number"
             name="images"
           ></input>
         </div>
-
-        <div className="input__head6">
-          <h3>BODY</h3>
+        <div className="input__videos">
+          <span className="input__videos--header">Number of videos</span>
           <input
-            className="input__body"
+            className="input__videos--input"
+            placeholder=""
+            type="number"
+            name="videos"
+          ></input>
+        </div>
+        <div className="input__body">
+          <span className="input__body--header">Body of article</span>
+          <textarea
+            className="input__body--input"
             type="textarea"
             placeholder="Write or paste your content here..."
             name="body"
-          ></input>
+          ></textarea>
+        </div>
+        <div className="buttons">
+          <button className="button--white">CANCEL</button>
+          <button className="button--grey">SAVE DRAFT</button>
+          <button type="submit" className="input__submit button--grey">
+            SEE RESULTS
+          </button>
         </div>
       </form>
     </div>
