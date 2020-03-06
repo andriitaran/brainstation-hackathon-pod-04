@@ -46,16 +46,6 @@ export default class App extends Component {
           <Switch>
             <Route path="/" exact>
               <Header />
-<<<<<<< HEAD
-              <h1>HACKATHON</h1>
-              <Report />
-              {articles}
-            </Route>
-            <Route path="/input">
-              <Header />
-              <h1>HACKATHON</h1>
-              <Input />
-=======
               <section className="main">
                 <div className="main-container">
                   <div className="main-container__top">
@@ -82,7 +72,6 @@ export default class App extends Component {
                   {articles}
                 </div>
               </section>
->>>>>>> 3aae2bc77bf697e6228a13924dfa70e9cb855262
             </Route>
             <Route
               path="/input"

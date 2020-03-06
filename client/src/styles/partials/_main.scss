@@ -11,6 +11,7 @@
       &--button {
         width: 170px;
         height: 40px;
+        background-color: #c5dfcf;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
@@ -65,6 +66,9 @@
       &--date {
         @include subheader(18px, 15px);
         margin-left: 20px;
+      }
+      &:hover {
+        background-color: rgba(181, 219, 196, 0.3);
       }
     }
   }

@@ -29,7 +29,6 @@ body {
 }
 
 .container {
-<<<<<<< HEAD
   margin-left: 160px;
   margin-right: 160px;
   height: 150px;
@@ -39,7 +38,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report__to-draft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.report__to-draft-button {
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.report__to-draft-button-2 {
+  width: 171px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,34 +371,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
->>>>>>> 3aae2bc77bf697e6228a13924dfa70e9cb855262
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-<<<<<<< HEAD
-.report__to-draft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.report__to-draft-button {
-  width: 220px;
-  height: 50px;
-  border-radius: 5px;
-  background-color: white;
-  margin-right: 15px;
-  font-style: normal;
-  font-weight: 800;
-}
-
-.report__to-draft-button-2 {
-  width: 171px;
-  height: 50px;
-  border-radius: 5px;
-=======
 .main-container__top--header {
   font-family: Avenir Regular;
   font-size: 50px;
@@ -382,6 +385,7 @@ body {
 .main-container__top--button {
   width: 170px;
   height: 40px;
+  background-color: #c5dfcf;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -471,6 +475,10 @@ body {
   margin-left: 20px;
 }
 
+.main-container__article:hover {
+  background-color: rgba(181, 219, 196, 0.3);
+}
+
 a {
   text-decoration: none;
 }
@@ -511,6 +519,5 @@ a {
 
 .login {
   margin-left: 440px;
->>>>>>> 3aae2bc77bf697e6228a13924dfa70e9cb855262
 }
 /*# sourceMappingURL=main.css.map */
