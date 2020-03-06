@@ -41,19 +41,234 @@ body {
 }
 
 .input {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .input-header__title {
   font-family: Avenir Regular;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 68px;
+  margin-bottom: 64px;
 }
 
-.input-header__button-container {
-  position: relative;
-  float: right;
-  top: -70px;
+.input__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__title--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__title--box {
+  height: 70px;
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__date {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__date--posting {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__date--input {
+  height: 70px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__category {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__category--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__category--input {
+  width: 455px;
+  height: 70px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__links {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__links--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__links--input {
+  width: 100px;
+  height: 70px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__images {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__images--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__images--input {
+  width: 100px;
+  height: 70px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__videos {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__videos--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__videos--input {
+  width: 100px;
+  height: 70px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.input__body {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input__body--header {
+  font-family: Avenir Regular;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 13px;
+}
+
+.input__body--input {
+  padding-top: 40px;
+  width: 100%;
+  height: 660px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 18px;
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.buttons {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,10 +278,23 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 100px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
   padding: 11px;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
   background-color: #ffffff;
 }
 
@@ -74,10 +302,23 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 100px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
   padding: 11px;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
   background-color: #dddddd;
 }
 
