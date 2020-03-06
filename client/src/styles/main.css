@@ -80,4 +80,119 @@ body {
   margin-left: 20px;
   background-color: #dddddd;
 }
+
+.main-container {
+  margin: 70px 158px;
+}
+
+.main-container__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container__top--header {
+  font-family: Avenir Regular;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-container__top--button {
+  width: 170px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.main-container__top--button:focus {
+  outline: none;
+}
+
+.main-container__top--button::hover {
+  cursor: pointer;
+}
+
+.main-container__top--button span {
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.main-container__placeholders {
+  margin-top: 91px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Avenir Regular;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-container__placeholders--title {
+  margin-right: 708px;
+}
+
+.main-container__placeholders--category {
+  margin-right: 66px;
+}
+
+.main-container__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1120px;
+  height: 120px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main-container__article--title {
+  font-family: Avenir Regular;
+  font-size: 24px;
+  line-height: 33px;
+  margin-left: 40px;
+  width: 605px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.main-container__article--category {
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 15px;
+  margin-left: 115px;
+  width: 150px;
+}
+
+.main-container__article--date {
+  font-family: Avenir Regular;
+  font-size: 18px;
+  line-height: 15px;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=main.css.map */
