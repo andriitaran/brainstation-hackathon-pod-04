@@ -12,12 +12,13 @@ router.get("/", (req, res) => {
       return (element = {
         id: element.id,
         title: element.title,
+        category: element.category,
         date: element.date,
         links: element.links,
+        mash: element.links,
         images: element.images,
-        category: element.category,
-        body: element.body,
-        keywords: element.keywords
+        videos: element.videos,
+        body: element.body
       });
     })
   );
@@ -28,12 +29,13 @@ router.post("/", (req, res) => {
   const newElement = {
     id: helper.getNewId(),
     title: req.body.title,
-    date: req.body.date,
-    links: req.body.links,
-    images: req.body.images,
     category: req.body.category,
-    body: req.body.body,
-    keywords: req.body.keywords
+    date: Date.now(),
+    links: req.body.links,
+    mash: req.body.links,
+    images: req.body.images,
+    video: req.body.video,
+    body: req.body.body
   };
   data.push(newElement); //pushes new element into an existing array
   helper.writeJSONFile(dataFile, data); //writes new array of elements to JSON
