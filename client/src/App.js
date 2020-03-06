@@ -29,6 +29,8 @@ export default class App extends Component {
       return (
         <div>
           <span>{article.title}</span>
+          <span>{article.date}</span>
+          <span>{article.category}</span>
         </div>
       );
     });
