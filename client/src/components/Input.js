@@ -21,7 +21,6 @@ function Input(props) {
 
   const handleCreate = event => {
     event.preventDefault();
-    console.log(event.target.date.value);
     let input = {
       title: event.target.title.value,
       category: event.target.category.value,
@@ -54,12 +53,12 @@ function Input(props) {
         <div className="input__category">
           <span className="input__category--header">Category</span>
           <select className="input__category--input" name="category">
-            <option value="technology">Technology</option>
-            <option value="lifestyle">Lifestyle</option>
-            <option value="socialmedia">Social Media</option>
-            <option value="business">Business</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="world">World</option>
+            <option value="Technology">Technology</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Business">Business</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="World">World</option>
           </select>
         </div>
         <div className="input__links">

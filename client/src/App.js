@@ -40,7 +40,7 @@ export default class App extends Component {
     });
 
     return (
-      <div>
+      <>
         <Router>
           <Switch>
             <Route path="/" exact>
@@ -72,13 +72,20 @@ export default class App extends Component {
                 </div>
               </section>
             </Route>
-            <Route path="/input">
-              <Header />
-              <Input />
-            </Route>
+            <Route
+              path="/input"
+              render={() => {
+                return (
+                  <>
+                    <Header />
+                    <Input state={this.state} setState={this.setState} />
+                  </>
+                );
+              }}
+            ></Route>
           </Switch>
         </Router>
-      </div>
+      </>
     );
   }
 }

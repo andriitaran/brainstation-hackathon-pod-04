@@ -37,7 +37,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px 160px;
+  margin: 70px 160px;
 }
 
 .input {
@@ -323,7 +323,7 @@ body {
 }
 
 .main-container {
-  margin: 70px 158px;
+  margin: 70px 160px;
 }
 
 .main-container__top {
