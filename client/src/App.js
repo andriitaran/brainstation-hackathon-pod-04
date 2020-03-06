@@ -7,8 +7,9 @@ import {
   Switch,
   Link
 } from "react-router-dom";
-import Input from "./components/Input";
 import axios from "axios";
+import Input from "./components/Input";
+import Header from "./components/Header";
 
 export default class App extends Component {
   state = {
@@ -36,11 +37,14 @@ export default class App extends Component {
       <div>
         <Router>
           <Switch>
-            <Route path="/">
+            <Route path="/" exact>
+              <Header />
               <h1>HACKATHON</h1>
               {articles}
             </Route>
             <Route path="/input">
+              <Header />
+              <h1>HACKATHON</h1>
               <Input />
             </Route>
           </Switch>
