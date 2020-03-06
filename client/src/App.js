@@ -10,6 +10,7 @@ import {
 import axios from "axios";
 import Input from "./components/Input";
 import Header from "./components/Header";
+import Report from "./components/Report";
 
 export default class App extends Component {
   state = {
@@ -42,6 +43,7 @@ export default class App extends Component {
             <Route path="/" exact>
               <Header />
               <h1>HACKATHON</h1>
+              <Report />
               {articles}
             </Route>
             <Route path="/input">
