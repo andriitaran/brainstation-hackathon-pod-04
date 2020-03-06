@@ -18,13 +18,13 @@
 //MIXINS FOR HEADERS, SUBHEADERS, PARAGRAPHS & TEXT
 
 @mixin header($font-size, $line-height) {
-  font-family: Avenir Bold;
+  font-family: Avenir Regular;
   font-size: $font-size;
   line-height: $line-height;
 }
 
 @mixin subheader($font-size, $line-height) {
-  font-family: Avenir Demi Bold;
+  font-family: Avenir Regular;
   font-size: $font-size;
   line-height: $line-height;
 }

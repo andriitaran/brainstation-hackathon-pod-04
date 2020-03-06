@@ -22,6 +22,7 @@ function Input(props) {
 
   const handleCreate = event => {
     event.preventDefault();
+    console.log(event.target.date.value);
     let input = {
       title: event.target.title.value,
       date: event.target.date.value,
@@ -53,12 +54,7 @@ function Input(props) {
           </div>
           <div className="input__head2">
             <h3>DAY</h3>
-            <input
-              name="date"
-              type="date"
-              className="input__day"
-              placeholder="Day of the week you will be posting"
-            ></input>
+            <input name="date" type="date" className="input__day"></input>
           </div>
           <div className="input__head3">
             <h3>NUMBER OF HYPERLINKS</h3>

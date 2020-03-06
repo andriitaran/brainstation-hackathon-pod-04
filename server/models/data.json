@@ -2,7 +2,7 @@
   {
     "id": "4c2bd4d0-5fe2-11ea-8cb2-df0c6177b855",
     "title": "When Baby Sharks Go Bad",
-    "day": "Monday",
+    "date": "2020-03-10",
     "links": "3",
     "images": "8",
     "category": "Lifestyle",
@@ -12,10 +12,21 @@
   {
     "id": "4c2bd4d0-5fe2-11ea-8cb2-df0c6177b858",
     "title": "When Good Devs Go Bad",
+    "date": "2020-03-10",
     "links": "3",
     "images": "8",
     "category": "lifestyle",
     "body": "lorem ipsum etc",
     "keywords": "sharks"
+  },
+  {
+    "id": "7d80ae80-5feb-11ea-8bd6-97d0e3d8e581",
+    "title": "asdf",
+    "date": "2020-03-10",
+    "links": "5",
+    "images": "4",
+    "category": "lifestyle",
+    "body": ";aa;ksjldf;lakjsdf;laksjdfpioasdf",
+    "keywords": ""
   }
 ]
