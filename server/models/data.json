@@ -1,1 +1,21 @@
-[{"id":"1af0jruup5gu","name":"Test Data 1"},{"id":"1af0jruu234","name":"Test Data 2"},{"id":"1af0jruu224","name":"Test Data 3"}]
+[
+  {
+    "id": "4c2bd4d0-5fe2-11ea-8cb2-df0c6177b855",
+    "title": "When Baby Sharks Go Bad",
+    "day": "Monday",
+    "links": "3",
+    "images": "8",
+    "category": "Lifestyle",
+    "body": "lorem ipsum etc",
+    "keywords": "sharks"
+  },
+  {
+    "id": "4c2bd4d0-5fe2-11ea-8cb2-df0c6177b858",
+    "title": "When Good Devs Go Bad",
+    "links": "3",
+    "images": "8",
+    "category": "lifestyle",
+    "body": "lorem ipsum etc",
+    "keywords": "sharks"
+  }
+]
