@@ -11,7 +11,14 @@ router.get("/", (req, res) => {
     data.map(element => {
       return (element = {
         id: element.id,
-        name: element.name
+        title: element.title,
+        category: element.category,
+        date: element.date,
+        links: element.links,
+        mash: element.links,
+        images: element.images,
+        videos: element.videos,
+        body: element.body
       });
     })
   );
@@ -20,8 +27,15 @@ router.get("/", (req, res) => {
 //add element route
 router.post("/", (req, res) => {
   const newElement = {
-    id: req.body.id,
-    name: req.body.name
+    id: helper.getNewId(),
+    title: req.body.title,
+    category: req.body.category,
+    date: Date.now(),
+    links: req.body.links,
+    mash: req.body.links,
+    images: req.body.images,
+    video: req.body.video,
+    body: req.body.body
   };
   data.push(newElement); //pushes new element into an existing array
   helper.writeJSONFile(dataFile, data); //writes new array of elements to JSON

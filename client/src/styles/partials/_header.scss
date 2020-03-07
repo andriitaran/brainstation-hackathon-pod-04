@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: $primary;
+  @include text(18px, 18px);
+  display: flex;
+  height: 100px;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+
+    &--link {
+      text-decoration: none;
+      color: $black;
+      margin-right: 70px;
+    }
+  }
+
+  &__logo {
+    height: 60px;
+    margin-left: 50px;
+  }
+}
+
+.login {
+  margin-left: 440px;
+}
