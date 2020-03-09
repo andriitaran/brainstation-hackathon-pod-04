@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Input(props) {
   const recordInput = input => {
@@ -15,7 +16,7 @@ function Input(props) {
         body: input.body
       }
     }).then(response => {
-      console.log("Content was input successfully!");
+      window.location.href = "http://localhost:3000/result";
     });
   };
 
@@ -100,9 +101,11 @@ function Input(props) {
         <div className="buttons">
           <button className="button--white">CANCEL</button>
           <button className="button--grey">SAVE DRAFT</button>
-          <button type="submit" className="input__submit button--grey">
-            SEE RESULTS
-          </button>
+          {/* <Link to="/result"> */}
+            <button type="submit" className="input__submit button--grey">
+              SEE RESULTS
+            </button>
+          {/* </Link> */}
         </div>
       </form>
     </div>

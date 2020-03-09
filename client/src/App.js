@@ -7,6 +7,8 @@ import {
   Switch,
   Link
 } from "react-router-dom";
+
+
 import axios from "axios";
 import Input from "./components/Input";
 import Header from "./components/Header";
@@ -72,6 +74,7 @@ export default class App extends Component {
                   {articles}
                 </div>
               </section>
+              {/* <Report /> */}
             </Route>
             <Route
               path="/input"
@@ -84,6 +87,10 @@ export default class App extends Component {
                 );
               }}
             ></Route>
+            <Route path="/result">
+              <Header />
+              <Report />
+            </Route>
           </Switch>
         </Router>
       </>

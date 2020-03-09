@@ -1,36 +1,40 @@
-
-
-.container{
- margin-left: 160px; 
- margin-right: 160px;
- height: 150px;
+.container {
+  margin-left: 160px;
+  margin-right: 160px;
+  height: 150px;
 }
 
 .report {
   display: flex;
   justify-content: space-between;
 
-  &__to-draft{
+  &__to-draft {
     display: flex;
   }
-  &__to-draft-button{
-    width: 220px;
+  &__to-draft-button {
+    @include text(18px, 18px);
+    width: 171px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     margin-right: 15px;
     font-style: normal;
     font-weight: 800;
-    
-    
+    border: 1px solid #57bc7f;
   }
-  &__to-draft-button-2{
+  &__to-draft-button-2 {
+    @include text(18px, 18px);
     width: 171px;
-    height: 50px;        
-    border-radius: 5px;
-
+    height: 50px;
+    border-radius: 10px;
+    background-color: #c5dfcf;
+    border: none;
   }
   // &__data img{
-    
+
   // }
+}
+.report span {
+  @include text(50px, 68px);
+  margin-bottom: 145px;
 }

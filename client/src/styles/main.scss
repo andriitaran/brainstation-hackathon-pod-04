@@ -1,13 +1,13 @@
 //GLOBAL STYLING
 
-@import "../styles/partials/reset";
-@import "../styles/partials/breakpoints";
-@import "../styles/partials/colors";
-@import "../styles/partials/typography";
-@import "../styles/partials/report";
+@import "./partials/reset";
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/typography";
 
 // INDIVIDUAL PAGES
 
+@import "./partials/report";
 @import "./partials/input";
-@import "../styles/partials/main";
+@import "./partials/main";
 @import "./partials/header";

@@ -30,14 +30,14 @@ router.post("/", (req, res) => {
     id: helper.getNewId(),
     title: req.body.title,
     category: req.body.category,
-    date: Date.now(),
+    date: "A few seconds ago",
     links: req.body.links,
     mash: req.body.links,
     images: req.body.images,
     video: req.body.video,
     body: req.body.body
   };
-  data.push(newElement); //pushes new element into an existing array
+  data.unshift(newElement); //pushes new element into an existing array
   helper.writeJSONFile(dataFile, data); //writes new array of elements to JSON
   res.json(data); //return a new array of elements
 });
