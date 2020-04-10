@@ -375,8 +375,13 @@ body {
   background-color: #dddddd;
 }
 
+body {
+  background-color: #f3f3f3;
+}
+
 .main-container {
   margin: 70px 160px;
+  max-width: 1120px;
 }
 
 .main-container__top {
